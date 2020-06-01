@@ -11,7 +11,8 @@ Git & github tutorial part 2: https://www.youtube.com/watch?v=gunh_-IkeAw
 package Assignment;
 
 public class Lab1Y3G25_MuhamadNadim_AmirulAzri {
-    public static void main(String[] args) {
-     System.out.println("Muhamad Nadim");
+    public static void main(String[] args)
+    {
+
     }
 }
