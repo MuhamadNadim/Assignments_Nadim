@@ -15,6 +15,23 @@ import java.util.Scanner;
 public class Lab1Y3G25_MuhamadNadim_AmirulAzri {
     public static void main(String[] args)
     {
+        Scanner read = new Scanner(System.in);
+
+        System.out.println("This calculator only inputs two values and has six calculation method.");
+
+        System.out.println("Enter the first value: ");
+        int n1 = read.nextInt();
+
+        System.out.println("Enter the second value: ");
+        int n2 = read.nextInt();
+
+        System.out.println("Which of kind of calculation you want to see? :- ");
+        System.out.println("1. Addition");
+        System.out.println("2. Subtraction");
+        System.out.println("3. Multiplication");
+        System.out.println("4. Division");
+        System.out.println("5. Power[the first value ^ the second value]");
+        System.out.println("6. Square[the first/second value ^ 2]");
 
     }
 }
