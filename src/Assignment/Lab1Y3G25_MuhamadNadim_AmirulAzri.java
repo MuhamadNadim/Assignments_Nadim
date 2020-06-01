@@ -10,6 +10,8 @@ Git & github tutorial part 2: https://www.youtube.com/watch?v=gunh_-IkeAw
  */
 package Assignment;
 
+import java.util.Scanner;
+
 public class Lab1Y3G25_MuhamadNadim_AmirulAzri {
     public static void main(String[] args)
     {
