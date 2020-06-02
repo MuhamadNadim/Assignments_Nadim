@@ -14,7 +14,8 @@ package Assignment;
 
 import java.util.Scanner;
 
-public class Lab1Y3G25_MuhamadNadim_AmirulAzri {
+public class Lab1Y3G25_MuhamadNadim_AmirulAzri
+{
     public static void main(String[] args)
     {
         Scanner read = new Scanner(System.in);
@@ -33,16 +34,64 @@ public class Lab1Y3G25_MuhamadNadim_AmirulAzri {
 
         // if(met == 1 || met == 2 || met == 3 || met == 4 || met == 5 || met == 6)
 
-        if(met == 1 || met == 2 || met == 3 || met == 4 || met == 5 || met == 6)
+        if(met == 1)
         {
+            System.out.println("Enter the first value: ");
+            int n1 = read.nextInt();
 
+            System.out.println("Enter the second value: ");
+            int n2 = read.nextInt();
+
+            add(n1,n2);
+        }
+        else if (met == 2)
+        {
+            System.out.println("Enter the first value: ");
+            int n1 = read.nextInt();
+
+            System.out.println("Enter the second value: ");
+            int n2 = read.nextInt();
+
+            sub(n1,n2);
+        }
+        else if (met == 3)
+        {
+            System.out.println("Enter the first value: ");
+            int n1 = read.nextInt();
+
+            System.out.println("Enter the second value: ");
+            int n2 = read.nextInt();
+
+            mul(n1,n2);
+        }
+        else if (met == 4)
+        {
+            System.out.println("Enter the first value: ");
+            int n1 = read.nextInt();
+
+            System.out.println("Enter the second value: ");
+            int n2 = read.nextInt();
+
+            div(n1,n2);
+        }
+        else if (met == 5)
+        {
+            System.out.println("Enter the first value: ");
+            int n1 = read.nextInt();
+
+            System.out.println("Enter the second value: ");
+            int n2 = read.nextInt();
+
+            pow(n1,n2);
+        }
+        else if (met == 6)
+        {
+            System.out.println("Enter one value: ");
+            int n3 = read.nextInt();
+
+            sq(n3);
         }
 
-        System.out.println("Enter the first value: ");
-        int n1 = read.nextInt();
-
-        System.out.println("Enter the second value: ");
-        int n2 = read.nextInt();
     }
     static int add(int n1, int n2)
     {
