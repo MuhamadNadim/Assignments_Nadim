@@ -32,8 +32,6 @@ public class Lab1Y3G25_MuhamadNadim_AmirulAzri
 
         int met = read.nextInt();
 
-        // if(met == 1 || met == 2 || met == 3 || met == 4 || met == 5 || met == 6)
-
         if(met == 1)
         {
             System.out.println("Enter the first value: ");
@@ -42,7 +40,9 @@ public class Lab1Y3G25_MuhamadNadim_AmirulAzri
             System.out.println("Enter the second value: ");
             int n2 = read.nextInt();
 
-            add(n1,n2);
+            int add_ans = add(n1,n2);
+
+            System.out.println(add_ans);
         }
         else if (met == 2)
         {
@@ -52,7 +52,9 @@ public class Lab1Y3G25_MuhamadNadim_AmirulAzri
             System.out.println("Enter the second value: ");
             int n2 = read.nextInt();
 
-            sub(n1,n2);
+            int sub_ans = sub(n1,n2);
+
+            System.out.println(sub_ans);
         }
         else if (met == 3)
         {
@@ -62,7 +64,9 @@ public class Lab1Y3G25_MuhamadNadim_AmirulAzri
             System.out.println("Enter the second value: ");
             int n2 = read.nextInt();
 
-            mul(n1,n2);
+            int mul_ans = mul(n1,n2);
+
+            System.out.println(mul_ans);
         }
         else if (met == 4)
         {
@@ -72,7 +76,9 @@ public class Lab1Y3G25_MuhamadNadim_AmirulAzri
             System.out.println("Enter the second value: ");
             int n2 = read.nextInt();
 
-            div(n1,n2);
+            int div_ans = div(n1,n2);
+
+            System.out.println(div_ans);
         }
         else if (met == 5)
         {
@@ -82,30 +88,36 @@ public class Lab1Y3G25_MuhamadNadim_AmirulAzri
             System.out.println("Enter the second value: ");
             int n2 = read.nextInt();
 
-            pow(n1,n2);
+            int pow_and = pow(n1,n2);
+
+            System.out.println(pow_and);
         }
         else if (met == 6)
         {
             System.out.println("Enter one value: ");
             int n3 = read.nextInt();
 
-            sq(n3);
+            int sq_ans = sq(n3);
+
+            System.out.println(sq_ans);
         }
 
     }
     static int add(int n1, int n2)
     {
-        return n1+n2;
+        int ans_add;
+        ans_add = n1+n2;
+        return ans_add;
     }
 
     static int sub(int n1, int n2)
     {
-        return n1-n2;
+        return  n1-n2;
     }
 
     static int mul(int n1, int n2)
     {
-        return n1*n2;
+        return  n1*n2;
     }
 
     static int div(int n1, int n2)
