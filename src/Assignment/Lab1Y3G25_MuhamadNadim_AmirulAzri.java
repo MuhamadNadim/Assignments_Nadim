@@ -20,18 +20,14 @@ public class Lab1Y3G25_MuhamadNadim_AmirulAzri
     {
         Scanner read = new Scanner(System.in);
 
+        table();
+        space();
         System.out.println("This calculator only inputs two values and has six calculation method.");
-
-        System.out.println("Which of kind of calculation you want to see? :- ");
-        System.out.println("1. Addition");
-        System.out.println("2. Subtraction");
-        System.out.println("3. Multiplication");
-        System.out.println("4. Division");
-        System.out.println("5. Power[the first value ^ the second value]");
-        System.out.println("6. Square[the first/second value ^ 2]");
-
+        space();
+        System.out.println("Pick one of the following calculation methods shown above:");
         int met = read.nextInt();
 
+        space();
         if(met == 1)
         {
             System.out.println("Enter the first value: ");
@@ -42,7 +38,9 @@ public class Lab1Y3G25_MuhamadNadim_AmirulAzri
 
             int add_ans = add(n1,n2);
 
-            System.out.println(add_ans);
+            space();
+
+            System.out.println("Answer: "+add_ans);
         }
         else if (met == 2)
         {
@@ -54,7 +52,9 @@ public class Lab1Y3G25_MuhamadNadim_AmirulAzri
 
             int sub_ans = sub(n1,n2);
 
-            System.out.println(sub_ans);
+            space();
+
+            System.out.println("Answer: "+sub_ans);
         }
         else if (met == 3)
         {
@@ -66,7 +66,9 @@ public class Lab1Y3G25_MuhamadNadim_AmirulAzri
 
             int mul_ans = mul(n1,n2);
 
-            System.out.println(mul_ans);
+            space();
+
+            System.out.println("Answer: "+mul_ans);
         }
         else if (met == 4)
         {
@@ -78,7 +80,9 @@ public class Lab1Y3G25_MuhamadNadim_AmirulAzri
 
             int div_ans = div(n1,n2);
 
-            System.out.println(div_ans);
+            space();
+
+            System.out.println("Answer: "+div_ans);
         }
         else if (met == 5)
         {
@@ -90,7 +94,9 @@ public class Lab1Y3G25_MuhamadNadim_AmirulAzri
 
             int pow_and = pow(n1,n2);
 
-            System.out.println(pow_and);
+            space();
+
+            System.out.println("Answer: "+pow_and);
         }
         else if (met == 6)
         {
@@ -99,10 +105,30 @@ public class Lab1Y3G25_MuhamadNadim_AmirulAzri
 
             int sq_ans = sq(n3);
 
-            System.out.println(sq_ans);
+            space();
+
+            System.out.println("Answer: "+sq_ans);
         }
 
     }
+    static void table()
+    {
+        System.out.println("____________________________________________________________________________");
+        System.out.println("||  Number   ||     Calculator's Operations                               ||");
+        System.out.println("||    1      ||         Addition                                          ||");
+        System.out.println("||    2      ||         Subtraction                                       ||");
+        System.out.println("||    3      ||         Multiplication                                    ||");
+        System.out.println("||    4      ||         Division                                          ||");
+        System.out.println("||    5      ||         Power[the first value ^ the second value]         ||");
+        System.out.println("||    6      ||         Square[the first/second value ^ 2]                ||");
+        System.out.println("----------------------------------------------------------------------------");
+    }
+
+    static void space()
+    {
+        System.out.println();
+    }
+
     static int add(int n1, int n2)
     {
         int ans_add;
@@ -127,7 +153,7 @@ public class Lab1Y3G25_MuhamadNadim_AmirulAzri
 
     static int pow(int n1, int n2)
     {
-        return n1^n2;
+        return (int) Math.pow(n1, n2);
     }
 
     static int sq(int n3)
