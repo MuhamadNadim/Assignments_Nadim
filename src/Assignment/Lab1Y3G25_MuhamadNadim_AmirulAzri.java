@@ -16,55 +16,61 @@ public class Lab1Y3G25_MuhamadNadim_AmirulAzri
         int run = 1;
         Scanner read = new Scanner(System.in);
 
+        while (run == 1)
+        {
+        space();
+        System.out.println("Press 1 to start this calculator program, or press 2 to quit.");
+        System.out.println("Please key in one of the two given numbers: ");
+        int beg = read.nextInt();
+
+        if (beg == 1) {
         table();
         space();
         System.out.println("This calculator only inputs two values and has six calculation methods.");
-        space();
         System.out.println("Pick one of the following calculation methods shown above:");
         int met = read.nextInt();
 
         space();
         if(met == 1)
-        {
-            add();
-        }
+        { add(); }
+
         else if (met == 2)
-        {
-            sub();
-        }
+        { sub(); }
+
         else if (met == 3)
-        {
-            mul();
-        }
+        { mul(); }
+
         else if (met == 4)
-        {
-            div();
-        }
+        { div(); }
+
         else if (met == 5)
-        {
-            pow();
-        }
+        { pow(); }
+
         else if (met == 6)
-        {
-            sqr();
-        }
+        { sqr(); }
+
         else
-        {
+        { System.out.println("Error! Only key in value number 1, 2, 3, 4, 5, or 6!!!"); }
 
         }
 
+        else if (beg == 2) { run = 0; }
+
+        else { System.out.println("Error! Only key in value number 1 or 2!!!"); }
+      }
     }
+
     static void table()
     {
-        System.out.println("____________________________________________________________________________");
-        System.out.println("||  Number   ||     Calculator's Operations                               ||");
-        System.out.println("||    1      ||         Addition                                          ||");
-        System.out.println("||    2      ||         Subtraction                                       ||");
-        System.out.println("||    3      ||         Multiplication                                    ||");
-        System.out.println("||    4      ||         Division                                          ||");
-        System.out.println("||    5      ||         Power[the first value ^ the second value]         ||");
-        System.out.println("||    6      ||         Square[the first/second value ^ 2]                ||");
-        System.out.println("----------------------------------------------------------------------------");
+        System.out.println("__________________________________________________________________________________________");
+        System.out.println("||  Number   ||                Calculator's Operations                                  ||");
+        System.out.println("||    1      ||         Addition [the first value + the second value]                   ||");
+        System.out.println("||    2      ||         Subtraction [the first value - the second value]                ||");
+        System.out.println("||    3      ||         Multiplication [the first value * the second value]             ||");
+        System.out.println("||    4      ||         Division [the first value / the second value]                   ||");
+        System.out.println("||    5      ||         Power [the base value ^ the exponent value]                     ||");
+        System.out.println("||    6      ||         Square [the input value ^ 2]                                    ||");
+        System.out.println("------------------------------------------------------------------------------------------");
     }
 
     static void space() { System.out.println();}
