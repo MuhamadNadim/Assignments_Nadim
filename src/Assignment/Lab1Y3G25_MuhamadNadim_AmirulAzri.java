@@ -4,11 +4,6 @@ Your program will read in values and operation to be calculated from the user an
 Your program is able to continue the calculation using the result from previous calculation plus a new value and new operation given by the user.
 Allow the user the select the operation of addition, subtraction, and multiplication, division, power (x^y), and square (x^2).
 User can reset the value back to zero just like normal calculator. Loop the operations until user chooses to quit the program.
-
-Git & github tutorial part 1: https://www.youtube.com/watch?v=H0nVBpoTBGc
-Git & github tutorial part 2: https://www.youtube.com/watch?v=gunh_-IkeAw
-
-Refer to notes and videos of Chapters 1-4 for references.
  */
 package Assignment;
 
@@ -18,11 +13,12 @@ public class Lab1Y3G25_MuhamadNadim_AmirulAzri
 {
     public static void main(String[] args)
     {
+        int run = 1;
         Scanner read = new Scanner(System.in);
 
         table();
         space();
-        System.out.println("This calculator only inputs two values and has six calculation method.");
+        System.out.println("This calculator only inputs two values and has six calculation methods.");
         space();
         System.out.println("Pick one of the following calculation methods shown above:");
         int met = read.nextInt();
@@ -30,84 +26,31 @@ public class Lab1Y3G25_MuhamadNadim_AmirulAzri
         space();
         if(met == 1)
         {
-            System.out.println("Enter the first value: ");
-            int n1 = read.nextInt();
-
-            System.out.println("Enter the second value: ");
-            int n2 = read.nextInt();
-
-            int add_ans = add(n1,n2);
-
-            space();
-
-            System.out.println("Answer: "+add_ans);
+            add();
         }
         else if (met == 2)
         {
-            System.out.println("Enter the first value: ");
-            int n1 = read.nextInt();
-
-            System.out.println("Enter the second value: ");
-            int n2 = read.nextInt();
-
-            int sub_ans = sub(n1,n2);
-
-            space();
-
-            System.out.println("Answer: "+sub_ans);
+            sub();
         }
         else if (met == 3)
         {
-            System.out.println("Enter the first value: ");
-            int n1 = read.nextInt();
-
-            System.out.println("Enter the second value: ");
-            int n2 = read.nextInt();
-
-            int mul_ans = mul(n1,n2);
-
-            space();
-
-            System.out.println("Answer: "+mul_ans);
+            mul();
         }
         else if (met == 4)
         {
-            System.out.println("Enter the first value: ");
-            int n1 = read.nextInt();
-
-            System.out.println("Enter the second value: ");
-            int n2 = read.nextInt();
-
-            int div_ans = div(n1,n2);
-
-            space();
-
-            System.out.println("Answer: "+div_ans);
+            div();
         }
         else if (met == 5)
         {
-            System.out.println("Enter the first value: ");
-            int n1 = read.nextInt();
-
-            System.out.println("Enter the second value: ");
-            int n2 = read.nextInt();
-
-            int pow_and = pow(n1,n2);
-
-            space();
-
-            System.out.println("Answer: "+pow_and);
+            pow();
         }
         else if (met == 6)
         {
-            System.out.println("Enter one value: ");
-            int n3 = read.nextInt();
+            sqr();
+        }
+        else
+        {
 
-            int sq_ans = sq(n3);
-
-            space();
-
-            System.out.println("Answer: "+sq_ans);
         }
 
     }
@@ -124,40 +67,69 @@ public class Lab1Y3G25_MuhamadNadim_AmirulAzri
         System.out.println("----------------------------------------------------------------------------");
     }
 
-    static void space()
+    static void space() { System.out.println();}
+
+    public static void add()
     {
-        System.out.println();
+        Scanner i = new Scanner(System.in);
+        System.out.println("Enter the first value: ");
+        int n1 = i.nextInt();
+        System.out.println("Enter the second value: ");
+        int n2 = i.nextInt();
+        int ans = n1+n2;
+        System.out.println("Answer for this addition is : "+ans);
     }
 
-    static int add(int n1, int n2)
+    public static void sub()
     {
-        int ans_add;
-        ans_add = n1+n2;
-        return ans_add;
+        Scanner i = new Scanner(System.in);
+        System.out.println("Enter the first value: ");
+        int n1 = i.nextInt();
+        System.out.println("Enter the second value: ");
+        int n2 = i.nextInt();
+        int ans = n1-n2;
+        System.out.println("Answer for this subtraction is : "+ans);
     }
 
-    static int sub(int n1, int n2)
+    public static void mul()
     {
-        return  n1-n2;
+        Scanner i = new Scanner(System.in);
+        System.out.println("Enter the first value: ");
+        int n1 = i.nextInt();
+        System.out.println("Enter the second value: ");
+        int n2 = i.nextInt();
+        int ans = n1*n2;
+        System.out.println("Answer for this multiplication is : "+ans);
     }
 
-    static int mul(int n1, int n2)
+    public static void div()
     {
-        return  n1*n2;
+        Scanner i = new Scanner(System.in);
+        System.out.println("Enter the first value: ");
+        int n1 = i.nextInt();
+        System.out.println("Enter the second value: ");
+        int n2 = i.nextInt();
+        int ans = n1/n2;
+        System.out.println("Answer for this division is : "+ans);
     }
 
-    static int div(int n1, int n2)
+    public static void pow()
     {
-        return n1/n2;
+        Scanner i = new Scanner(System.in);
+        System.out.println("Enter the base value: ");
+        int n1 = i.nextInt();
+        System.out.println("Enter the exponent value: ");
+        int n2 = i.nextInt();
+        int ans = (int) Math.pow(n1, n2);
+        System.out.println("Answer for this addition is : "+ans);
     }
 
-    static int pow(int n1, int n2)
+    public static void sqr()
     {
-        return (int) Math.pow(n1, n2);
-    }
-
-    static int sq(int n3)
-    {
-        return (int) Math.pow(n3, 2);
+        Scanner i = new Scanner(System.in);
+        System.out.println("Enter a value: ");
+        int n1 = i.nextInt();
+        int ans = (int) Math.pow(n1,2);
+        System.out.println("Answer for this addition is : "+ans);
     }
 }
