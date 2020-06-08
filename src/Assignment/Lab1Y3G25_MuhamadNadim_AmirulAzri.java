@@ -14,14 +14,14 @@ public class Lab1Y3G25_MuhamadNadim_AmirulAzri
         space();
         System.out.println("Press 1 to start this calculator program, or press 2 to quit.");
         System.out.println("Please key in one of the two given numbers: ");
-        int beg = read.nextInt();
+        int beg = read.nextInt(); // int beg means beginning
 
         if (beg == 1)
         {
         table();
         space();
         System.out.println("Pick one of the following calculation methods shown above:");
-        int met = read.nextInt();
+        int met = read.nextInt(); // int met means method
 
         space();
         if(met == 1)
@@ -51,7 +51,7 @@ public class Lab1Y3G25_MuhamadNadim_AmirulAzri
 
         else { System.out.println("Error! Only key in value number 1 or 2!!!"); }
 
-      }
+    }
 
 }
 
