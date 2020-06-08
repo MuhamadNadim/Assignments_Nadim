@@ -16,7 +16,8 @@ public class Lab1Y3G25_MuhamadNadim_AmirulAzri
         System.out.println("Please key in one of the two given numbers: ");
         int beg = read.nextInt();
 
-        if (beg == 1) {
+        if (beg == 1)
+        {
         table();
         space();
         System.out.println("This calculator only inputs two values and has six calculation methods.");
@@ -50,8 +51,11 @@ public class Lab1Y3G25_MuhamadNadim_AmirulAzri
         else if (beg == 2) { run = 0; }
 
         else { System.out.println("Error! Only key in value number 1 or 2!!!"); }
+
       }
-    }
+
+}
+
 
     static void table()
     {
