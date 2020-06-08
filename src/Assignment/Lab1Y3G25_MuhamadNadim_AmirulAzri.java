@@ -20,7 +20,6 @@ public class Lab1Y3G25_MuhamadNadim_AmirulAzri
         {
         table();
         space();
-        System.out.println("This calculator only inputs two values and has six calculation methods.");
         System.out.println("Pick one of the following calculation methods shown above:");
         int met = read.nextInt();
 
